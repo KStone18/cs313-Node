@@ -1,0 +1,163 @@
+
+.strip {
+	margin: 0!important;
+	padding: 0!important;
+}
+.title{
+    color: #dee8e8;
+}
+
+p { 
+    color: #dee8e8;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    font-family: Arial;
+}
+
+body {font-family: Arial, Helvetica, sans-serif; }
+* {box-sizing: border-box}
+
+.backgrd {
+    background: gray url(background.jpg) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    -webkit-animation: slide 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.weight{
+    width: 100%;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #174f47;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+.dataForm {
+	border:1px solid #ccc;
+}
+.pForm {
+	margin: 50px;
+	margin: auto;
+	height: 300px;
+
+}
+
+.test {
+	
+	margin: auto;
+}
+
+.loginLink {
+	margin-right: 15px;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+}
+
+.addInfoBtn {
+    margin-top: 20px; 
+    float: left;
+    width: 40%;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  color: #dee8e8;
+  /*margin: 10px;*/
+  width: 40%;
+}
+
+/* Add padding to container elements */
+.containerSign {
+    background-color: #4b918c;
+    border-radius: 25px;
+	margin: auto;
+	margin-top: 100px;
+    padding: 16px;
+    width: 500px;
+}
+
+.containerResult {
+	margin: auto;
+	margin-top: 10px;
+    width: 700px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+
+/*@media screen and (max-width: 1250px) {
+	.container ul li {
+		width: 40%;
+		margin-left: 50px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.container {
+		width: 100%;
+		padding: 0px;
+	}
+
+	.container ul li {
+		float: none;
+		width: 90%;
+		margin: 40px auto;
+	}
+}
+*/

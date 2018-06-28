@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mail Submission Form</title>
+	<meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      	<link rel="stylesheet" href="stylesheets/newMain.css" type="text/css" charset="utf-8">
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>       -->
+</head>
+<body class="backgrd">
+	<form action="/mail" method="get">
+     	<div class="containerSign">
+    		<h1 class="title">Calculate Mail Costs</h1>
+    		<hr>
+      		<p>Fill Form to know cost of sending mail.</p>
+      		
+      
+      		<label for="Weight"><b>Weight of Item</b></label>
+      		<input type="number" class="weight" placeholder="Enter Weight to Nearest Pound" name="weight" id="weight"  required>
+      		<br>
+      		<br>
+
+	        <label for="TypeOfMail"><b>Type of Mail</b></label>
+      		<div class="form-group">
+      			<select name="mailType" class="form-control" id="mail" onchange="checkWeight()">
+      				<option value="none">Please Select Type</option>
+      				<option value="Letters (Stamped)">Letters (Stamped)</option>
+      				<option value="Letters (Metered)">Letters (Metered)</option>
+      				<option value="Large Envelopes (Flats)">Large Envelopes (Flats)</option>
+      				<option value="First-Class Package Service - Retail">First-Class Package Service - Retail</option>
+		      	</select>
+      		</div>
+
+      		<div class="clearfix">
+	       		<button type="submit" class="btn signupbtn">Submit</button>  
+      		</div>
+      		<hr>
+    	</div>
+  	</form>
+
+</body>
+</html>
